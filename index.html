@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    
     <div class="container-fluid">
         <div class="header container">
             <div class="title">
@@ -28,18 +29,14 @@
             </div>
 
         </div>
+        <!--Lets start whit a container to wrap everything in-->
         <div class="container">
-            <div class="tasks">
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 100px; width: 150px"></textarea>
-                        <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
-  <label class="form-check-label" for="checkdone">
-    task done
-  </label>
+            <!--Now a input so we can add more Task to get stressed,checkbox and textarea to comment each task-->
+            <input id="input-task" type="text" placeholder="Write your task here">
+            <button id="add-btn"class="btn btn-primary" >Add a Task!</button>
+            <div class="task-list row row-cols-1 row-cols-md-3 g-3 justify -content-end"></div>
+            
 </div>
-                    <label for="floatingTextarea2">Comments</label>
                 </div>
             </div>
         </div>
